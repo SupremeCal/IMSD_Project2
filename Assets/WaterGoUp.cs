@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class WaterGoUp : MonoBehaviour
 {
-    float WaterYPos = 0.1f;
+    float WaterYScale = 0.1f;
+    private float timer;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.localScale += new Vector3(0, WaterYPos * Time.deltaTime, 0);
+        //transform.localScale += new Vector3(0, WaterYScale * Time.deltaTime, 0);
+
+        timer += Time.deltaTime;
+
+        if (timer > 0 && timer < 10)
+        {
+            transform.localScale += new Vector3(0, WaterYScale * Time.deltaTime, 0);
+        }
+
+        if(timer > 20 && timer < 30)
+        {
+            transform.localScale += new Vector3(0, WaterYScale * Time.deltaTime, 0);
+        }
 
     }
 }
