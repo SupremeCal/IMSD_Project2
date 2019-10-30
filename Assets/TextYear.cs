@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class TextYear : MonoBehaviour
 {
     float timer;
-    Text Year;
+    TextMesh Year;
 
     // Start is called before the first frame update
     void Start()
     {
-        Year = GetComponent<Text>();
+        Year = GetComponent<TextMesh>();
     }
 
     // Update is called once per frame
@@ -22,6 +22,11 @@ public class TextYear : MonoBehaviour
         if (timer > 11)
         {
             Year.text = "Year 2025";
+        }
+
+        if (timer > 21)
+        {
+            Year.text = "Year 2050";
         }
     }
 }
