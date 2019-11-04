@@ -19,14 +19,26 @@ public class TextYear : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 11)
+        if (timer > 10)
         {
             Year.text = "Year 2025";
         }
 
-        if (timer > 21)
+        if (timer > 20)
         {
             Year.text = "Year 2050";
         }
+
+        if (timer > 30)
+        {
+            Year.text = "Year 2075";
+        }
+
+        if (timer > 40)
+        {
+            Year.text = "Year 2100";
+        }
+
+
     }
 }

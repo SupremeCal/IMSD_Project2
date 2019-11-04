@@ -28,5 +28,15 @@ public class WaterGoUp : MonoBehaviour
             transform.localScale += new Vector3(0, WaterYScale * Time.deltaTime, 0);
         }
 
+        if (timer > 40 && timer < 50)
+        {
+            transform.localScale += new Vector3(0, WaterYScale * Time.deltaTime, 0);
+        }
+
+        if (timer > 60 && timer < 70)
+        {
+            transform.localScale += new Vector3(0, WaterYScale * Time.deltaTime, 0);
+        }
+
     }
 }
